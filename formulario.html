@@ -1,0 +1,265 @@
+<html>
+<head>
+     <link rel="stylesheet" type="text/css" href="restaurante.css"/> 
+     <script tytpe="tex/javascrip"> src="jquery.js" </script>
+     
+
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Menú Desplegable</title>
+     <link rel="stylesheet" href="styles.css">
+     
+     <title>Formulario</title>
+</head>
+<body>
+       
+
+   <!--Menu de navegacion del sitio -->
+     <ul class="navbar">
+           <li><a href="restaurante.html">RESTAURANTE</a></li>
+           <li><a href="platos.html" >MENU </a></li>
+           <li><a href="bebidas.html" >BEBIDAS </a></li>
+           <li><a href= "ubicacion.html">UBICACION  </a></li>
+           <li><a href="formulario.html">FORMULARIO</a></li>
+          
+    
+
+
+     </ul>-->
+
+     <header>
+       <nav>
+           <ul class="menu">
+               <li><a href="#">Inicio</a></li>
+               <li class="dropdown">
+                   <a href="#">Servicios</a>
+                   <ul class="submenu">
+                       <li><a href="#">Asignacion de una mesa </a></li>
+                       <li><a href="#">Asesoramiento en la eleccion de platos </a></li>
+                       <li><a href="#">Servicios de alimentos y bebidas </a></li>
+                   </ul>
+               </li>
+               
+               <li class="dropdown">
+                     <a href="#">Acerca de Nosotros</a>
+                     <ul class="submenu">
+                         <li><a href="#">Somos una Familia apasionada por la gastronomía y el buen servicio, que nos gusta rodearnos con gente de los mismos gustos para disfrutar de atenderle de la mejor manera.
+
+                            Como restaurante nacimos el primero de Julio del 2013, después de haber trabajado en este ambiente y darnos cuenta cuanto lo disfrutamos.
+                            
+                            El nombre hace alución a Don Luis, señor padre de nuestro chef Kenneth, el cual dedico gran parte de su vida a la cocina tradicional costarricense en nuestros acostumbrados turnos o ferias de nuestros pueblos.
+                            
+                            Recientemente en junio de 2019 abrimos nuestro segundo restaurante en el centro de Santa Elena también en Monteverde con un menú diferente manteniendo nuestra misma tradición y amor por la gastronomía
+                            
+                            Lo esperamos en nuestros restaurantes </a></li>
+                         
+                     </ul>
+                 </li>
+
+
+               <li class="dropdown">
+                     <a href="#">Contactos</a>
+                     <ul class="submenu">
+                         <li><a href="#">cel...77409722 </a></li>
+                         <li><a href="#">tel...6789044 </a></li>
+                         
+                     </ul>
+                 </li>
+               <ul class="submenu">
+                     <li><a href="#">77409722 </a></li>
+                     <li><a href="#">6756787 </a></li>
+                     
+                 </ul>
+
+
+           </ul>
+       </nav>
+     </header>
+
+     
+<div class="cuerpo">
+    
+     <style>
+      body {
+        background-image: url("logo.jpg"); /* Cambia "ruta/a/tu/imagen.jpg" por la ruta de tu imagen de fondo */
+        background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+        background-size: cover; /* Ajusta la imagen de fondo al tamaño de la ventana del navegador */
+      }
+    </style>
+    
+    
+    
+         <H1>RESTAURANTE</H1>
+         <h1>SABOR AUTENTICO</h1>
+ 
+  
+         <h1>Formulario de venta</h1>
+         <form action="registrar.php" method="post" class="form-register" onsubmit="javascript:return Validar(this);">
+          <center> <h2 class="form__titulo">Datos de Cliente</h2></center>
+           <div class="contenedor-inputs">
+               <input type="text" name="nombre" id="nombre" class="input-48" placeholder="Nombre" onblur="javascript:Validar();" >
+                 <input type="text" name="apellidos" id="apellidos" class="input-48" placeholder="Apellidos" onblur="javascript:Validar();" >
+                 <input type="email" name="correo" id="correo" class="input -48" placeholder="Correo" onblur="javascript:Validar();" >
+                 <input type="text" name="usuario" id="usuario" class="input-48" placeholder="Usuario" onblur="javascript:Validar();">
+                 <input type="password" name="contraseña" id="contraseña" class="input-48" placeholder="Contraseña" onblur="javascript:Validar();">
+                 <input type="text" name="telefono" id="telefono" class="input-48"  placeholder="Telefono" onblur="javascript:Validar();">
+                
+             </div>
+     
+             <div class="centered-content">
+             <center><h4>Postres</h4>
+             <p><input type="radio" name="Helado" value="Helado" /> Flan</p>
+     <p><input type="radio" name="Ensalada de Frutas" value="Ensalada de Frutas" /> Helado</p>
+           </center>
+             </div>
+             <style>
+                 select {
+                   background-color: #f2f2f2; /* Color de fondo del desplegable */
+                   padding: 5px;
+                   border: 1px solid #ccc; /* Borde del desplegable */
+                   border-radius: 5px;
+                 }
+               
+                 option {
+                   background-color: #fff; /* Color de fondo de las opciones */
+                   color: #333; /* Color del texto de las opciones */
+                 }
+               </style>
+               
+               <style>
+                 .seccion {
+                   text-align: center;
+                 }
+               
+                 h4 {
+                   background-color: rgb(255, 228, 192);
+                 }
+               
+                 select {
+                   background-color: rgb(255, 237, 192);
+                   color: black; /* Cambia el color del texto a negro para que sea visible en el fondo rosa */
+                 }
+               
+                 /* Estilo para los radio buttons */
+                 input[type="radio"] {
+                   background-color: rgb(255, 236, 192);
+                   margin-right: 5px;
+                 }
+               </style>
+               </head>
+               <body>
+                 <div class="seccion">
+                   <center>
+                     <h4>Platos</h4>
+                     <select name="sabor">
+                       <option value="Chocolate">Chicharron</option>
+                       <option value="Frutilla">Planchitas</option>
+                       <option value="Vainilla">Laping</option>
+                       <option value="Leche">Charque</option>
+                       <option value="Oreo">Pique</option>
+                       
+                     </select>
+                   </center>
+                 </div>
+               
+                 <center>
+                   <h4>Refrescos</h4>
+                   <div class = "seccion">
+          
+                   <p><input type="checkbox" name="complemento[]" value="Crema" /> Gaseosas</p>
+                   <p><input type="checkbox" name="complemento[]" value="Chocolate" /> Jugos</p>
+                   <p><input type="checkbox" name="complemento[]" value="Chispas" /> Cervezas </p>
+            
+           </div>
+                   <input type="submit" value="Registrar" class="btn-enviar">
+                   <p class="form__link">¿Ya tienes una cuenta? <a href="#">Ingresa aquí</a> </p>
+                 </center>
+            
+        </div>
+        
+        
+        
+        
+    </form>
+
+    <script type="text/javascript">
+      function Validador(correo){
+          var tester =/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-]+)\.)+([a-zA-Z0-9]{2,4})+$/;
+          return tester.test(correo);
+      }
+      function Validar(){
+          var nombre = document.getElementById('nombre').value;
+          var apellidos= document.getElementById('apellidos').value;
+          var correo = document.getElementById('correo').value;
+          var usuario = document.getElementById('usuario').value;
+          var contraseña = document.getElementById('contraseña').value;
+          var telefono= document.getElementById('telefono').value;
+
+
+          if(nombre==""){
+              $('#alert').html('Debes ingresar un nombre').slideDown(500);
+              $('#nombre').focus();
+              return false;
+          }
+          else{
+              $('#alert').html('').slideDown(300);
+          }
+
+          if(apellidos==""){
+              $('#alert').html('Debe ingresar su apellido').slideDown(500);
+              $('#apellidos').focus();
+              return false;
+          }
+          else{
+              $('#alert').html('').slideDown(300);
+          }
+
+
+          if(correo==""){
+              $('#alert').html('Debes ingresar tu correo').slideDown(500);
+              $('#correo').focus();
+              return false;
+          }
+          else{
+              $('#alert').html('').slideDown(300);
+          }
+
+          if(Validador(correo)==false){
+              $('#alert').html('Ingresa un correo valido').slideDown(500);
+              $('#correo').focus();
+              return false;
+          }
+          else{
+              $('#alert').html('').slideDown(300);
+          }
+          
+          
+      }
+
+
+</script>
+
+    
+
+    
+    
+    
+ 
+    
+    <h3>Contacto</h3>
+    <p> 
+     El restaurant esta ubicado en la ciudad de Cochabamba en el km.7
+    </p>
+    <p> Si quieres <span class="azul">comunicarse y hacer sus reservas  </span> llamame al 
+    (77409721) &nbsp;&nbsp;Te esperamos.</p>
+    
+    
+         
+    <h3>Gracias por su visita</h3><br>
+    
+
+  
+    
+ </div>
+</body>
+</html>
